@@ -5,9 +5,8 @@ const Header = () => {
   return (
     <HeaderContainer>
       <h1>
-        {" "}
         {"<Monalisa Menezes"} <span>/</span>
-        {">"}{" "}
+        {">"}💻
       </h1>
 
       <MenuNav>

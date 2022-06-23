@@ -1,5 +1,4 @@
 import { styled } from "@mui/material";
-import Link from "next/link";
 
 export const HeaderContainer = styled("header")`
   width: 100%;
@@ -9,6 +8,7 @@ export const HeaderContainer = styled("header")`
   align-items: center;
   padding: 0 1rem;
   justify-content: space-between;
+  border-bottom: 2px solid #FFCDB2;
 
   h1 {
     color: ${({ theme }) => theme.palette.text.primary};
