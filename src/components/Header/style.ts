@@ -9,10 +9,15 @@ export const HeaderContainer = styled("header")`
   padding: 0 1rem;
   justify-content: space-between;
   border-bottom: 2px solid #FFCDB2;
+  height: 15%;
 
-  h1 {
+  button {
     color: ${({ theme }) => theme.palette.text.primary};
     font-weight: 500;
+    background: transparent;
+    border: 0;
+    height: 40px;
+    font-size: 1.8rem;
   }
 
   span {

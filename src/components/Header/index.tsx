@@ -4,16 +4,18 @@ import { HeaderContainer, MenuNav } from "./style";
 const Header = () => {
   return (
     <HeaderContainer>
-      <h1>
-        {"<Monalisa Menezes"} <span>/</span>
-        {">"}💻
-      </h1>
+      <Link href="/">
+        <button>
+          {"<Monalisa Menezes"} <span>/</span>
+          {">"}💻
+        </button>
+      </Link>
 
       <MenuNav>
-        <Link href="/">Sobre</Link>
-        <Link href="/">Projetos</Link>
-        <Link href="/">Skills</Link>
-        <Link href="/">Contato</Link>
+        <Link href="/sobre">Sobre</Link>
+        <Link href="/projetos">Projetos</Link>
+        <Link href="/skills">Skills</Link>
+        <Link href="/contato">Contato</Link>
       </MenuNav>
     </HeaderContainer>
   );

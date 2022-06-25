@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           <Image
             src={devImage}
             alt="Desenvolvimento web"
-            width={600}
+            width={500}
             height={460}
           />
         </div>

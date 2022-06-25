@@ -7,8 +7,13 @@ export const FooterContainer = styled('footer')`
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 10%;
 
     p {
         font-size: 0.6rem;
+    }
+
+    svg {
+        margin: 3px;
     }
 `
