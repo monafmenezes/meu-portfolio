@@ -1,18 +1,23 @@
 import ContainerSobre from './styles'
 import image from '../../../public/images/mona.jpeg'
 import Image from 'next/image'
+import Head from 'next/head'
 
 const Sobre = () => {
   return (
-    <ContainerSobre>
-      <div>
-        <h1>
-          {'<Sobre'} <span>/</span>
-          {'>'} 👩‍💻
-        </h1>
-        <Image src={image} alt='Monalisa Menezes' width={300} height={300} />
-      </div>
-     
+    <>
+      <Head>
+        <title>{'<Sobre /> 👩‍💻'}</title>
+      </Head>
+      <ContainerSobre>
+        <div>
+          <h1>
+            {'<Sobre'} <span>/</span>
+            {'>'} 👩‍💻
+          </h1>
+          <Image src={image} alt='Monalisa Menezes' width={300} height={300} />
+        </div>
+
         <article>
           <h1>
             {'<Sobre'} <span>/</span>
@@ -31,8 +36,8 @@ const Sobre = () => {
             crescimento e desenvolvimento profissional.
           </p>
         </article>
-  
-    </ContainerSobre>
+      </ContainerSobre>
+    </>
   )
 }
 
