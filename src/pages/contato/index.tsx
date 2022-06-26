@@ -1,4 +1,4 @@
-import { TextField } from '@mui/material'
+import { Button, TextField } from '@mui/material'
 import ContatoContainer from './styles'
 
 export default function Contatos () {
@@ -8,13 +8,24 @@ export default function Contatos () {
         {'<Contato'} <span>/</span>
         {'>'} 📱
       </h1>
-      <form>
+      <form action='https://api.staticforms.xyz/submit' method='POST'>
+        <input
+          type='hidden'
+          name='accessKey'
+          value='d816dbe9-e064-46c2-bfee-9ee17f16dbc0'
+        />
+        <input
+          type='hidden'
+          name='redirectTo'
+          value='https://meu-portfolio-rouge.vercel.app/contato'
+        />
         <TextField
           placeholder='Nome'
           label='Nome'
           fullWidth
           margin='normal'
           color='secondary'
+          name='name'
         />
         <TextField
           placeholder='Email'
@@ -23,6 +34,7 @@ export default function Contatos () {
           fullWidth
           margin='normal'
           color='secondary'
+          name='email'
         />
         <TextField
           placeholder='Celular'
@@ -31,6 +43,7 @@ export default function Contatos () {
           fullWidth
           margin='normal'
           color='secondary'
+          name='phone'
         />
         <TextField
           multiline
@@ -39,8 +52,13 @@ export default function Contatos () {
           fullWidth
           margin='normal'
           color='secondary'
-          rows={4}
+          rows={3}
+          name='message'
         />
+
+        <Button type='submit' fullWidth style={{ background: ' #6d6875;' }}>
+          Enviar
+        </Button>
       </form>
     </ContatoContainer>
   )

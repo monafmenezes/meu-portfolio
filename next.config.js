@@ -8,8 +8,7 @@ module.exports = {
   typescript: {
     ignoreBuildErrors: true
   },
-  images: {
-    domains: ['joeschmoe.io/'],
-    
+  env: {
+    customKey: 'd816dbe9-e064-46c2-bfee-9ee17f16dbc0'
   }
 }
