@@ -10,15 +10,14 @@ export const HomeContainer = styled("main")`
 
     section {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
         margin-top: 1rem;
+        justify-content: space-between;
 
         div {
-            width: 50%;
+            width: 45%;
             display: flex;
             justify-content: center;
-            justify-content: center;
+            align-items: center;
         }
     }
 

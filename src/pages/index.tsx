@@ -1,11 +1,15 @@
-import { Grid } from "@mui/material";
 import type { NextPage } from "next";
 import { HomeContainer } from "../styles/styles";
-import devImage from "../../public/images/dev.png";
+import devImage from "../../public/images/develop.svg";
 import Image from "next/image";
+import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
+    <>
+    <Head>
+      <title>{'<Monalisa Menezes /> 👩‍💻'}</title>
+    </Head>
     <HomeContainer>
       <section>
         <div>
@@ -17,12 +21,14 @@ const Home: NextPage = () => {
           <Image
             src={devImage}
             alt="Desenvolvimento web"
-            width={500}
-            height={460}
+            width={400}
+            height={400}
           />
         </div>
       </section>
     </HomeContainer>
+    
+    </>
   );
 };
 

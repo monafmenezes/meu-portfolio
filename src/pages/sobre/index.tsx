@@ -1,11 +1,13 @@
 import { ContainerSobre } from "./styles";
+import image from "../../../public/images/mona.jpeg"
+import Image from "next/image";
 
 
 const Sobre = () => {
   return (
     <ContainerSobre>
       <div>
-        <img src="../../images/mona.jpeg" alt="Monalisa Menezes" />
+        <Image src={image} alt="Monalisa Menezes" width={300} height={300}/>
       </div>
 
       <article>
