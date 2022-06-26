@@ -1,6 +1,6 @@
 import { styled } from "@mui/material";
 
-export const ContainerSobre = styled("main")`
+const ContainerSobre = styled("main")`
   height: 75%;
   background-color: #b5838d;
   padding: 0 3rem;
@@ -47,3 +47,5 @@ export const ContainerSobre = styled("main")`
     width: 70%;
   }
 `;
+
+export default ContainerSobre

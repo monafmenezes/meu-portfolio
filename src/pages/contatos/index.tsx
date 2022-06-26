@@ -1,4 +1,4 @@
-const Contatos = () => {
+export default function Contatos(){
     return(
         <div>
             <h1>contatos</h1>
@@ -6,4 +6,3 @@ const Contatos = () => {
     )
 }
 
-export default Contatos

@@ -1,18 +1,15 @@
-import { ContainerProjetos } from "./styles"
+import ContainerProjetos from './styles'
+import Card from '../../components/Card'
 
-import Image from "next/image";
-import Card from "../../components/Card";
+export default function Projetos () {
+  return (
+    <ContainerProjetos>
+      <h1>
+        {'<Projetos'} <span>/</span>
+        {'>'} 💻
+      </h1>
 
-const Projetos = () => {
-
-  
-    return(
-        <ContainerProjetos>
-            <h1>{'<Projetos'} <span>/</span>{'>'} 💻</h1>
-
-            <Card/>
-        </ContainerProjetos>
-    )
+      <Card />
+    </ContainerProjetos>
+  )
 }
-
-export default Projetos

@@ -1,6 +1,6 @@
-import { styled } from "@mui/material";
+import { styled } from '@mui/material'
 
-export const ContainerSkills = styled("main")`
+const ContainerSkills = styled('main')`
   height: 75%;
   background-color: #b5838d;
   padding: 0 3rem;
@@ -16,9 +16,9 @@ export const ContainerSkills = styled("main")`
   span {
     color: ${({ theme }) => theme.palette.text.primary};
   }
-`;
+`
 
-export const ListSkills = styled("ul")`
+const ListSkills = styled('ul')`
   width: 100%;
   max-width: 700px;
   display: flex;
@@ -39,13 +39,14 @@ export const ListSkills = styled("ul")`
     cursor: pointer;
 
     &:hover {
-        transform: scale(1.2);
+      transform: scale(1.2);
     }
-}
-
+  }
 
   span {
     font-size: 14px;
     color: ${({ theme }) => theme.palette.text.primary};
   }
-`;
+`
+
+export default ContainerSkills; ListSkills;

@@ -1,4 +1,4 @@
-import { ContainerSobre } from "./styles";
+import ContainerSobre  from "./styles";
 import image from "../../../public/images/mona.jpeg"
 import Image from "next/image";
 
