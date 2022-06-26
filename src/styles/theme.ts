@@ -11,13 +11,13 @@ const theme = createTheme({
     text: {
       primary: '#FFCDB2',
       secondary: '#6D6875'
-    }
+    },
   },
   typography: {
     fontFamily: 'Roboto, sans-serif'
   },
   shape: {
-    borderRadius: '3px'
+    borderRadius: '4px'
   },
   components: {
     MuiButton: {

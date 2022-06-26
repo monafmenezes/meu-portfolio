@@ -2,11 +2,11 @@ import { styled } from '@mui/material'
 
 const ContainerSkills = styled('main')`
   height: 75%;
-  background-color: #b5838d;
-  padding: 0 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    background-color: #b5838d;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
   h1 {
     color: ${({ theme }) => theme.palette.text.secondary};
