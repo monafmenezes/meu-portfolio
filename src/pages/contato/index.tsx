@@ -61,7 +61,7 @@ export default function Contatos () {
             name='message'
           />
 
-          <Button type='submit' fullWidth style={{ background: ' #6d6875;' }}>
+          <Button type='submit' fullWidth style={{ background: ' #6d6875'}}>
             Enviar
           </Button>
         </form>
