@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaBars } from "react-icons/fa";
 import { HeaderContainer, MenuNav } from "./style";
 
 const Header = () => {
@@ -17,6 +18,9 @@ const Header = () => {
         <Link href="/skills">Skills</Link>
         <Link href="/contato">Contato</Link>
       </MenuNav>
+
+      <FaBars size={30} color="#FFCDB2"/>
+      
     </HeaderContainer>
   );
 };

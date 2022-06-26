@@ -22,6 +22,8 @@ const ContainerSkills = styled('main')`
     max-width: 700px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     li {
       max-width: 100px;
       padding: 2rem;

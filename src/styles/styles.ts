@@ -1,16 +1,17 @@
 import { styled } from "@mui/material";
 
-
 export const HomeContainer = styled("main")`
     background-color: #B5838D;
     padding: 0 3rem ;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     height: 75%;
 
     section {
         display: flex;
         margin-top: 1rem;
+        flex-direction: row;
         justify-content: space-between;
 
         div {
@@ -18,6 +19,16 @@ export const HomeContainer = styled("main")`
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            div {
+                margin: 1rem;
+                width: 100%;
+            }
         }
     }
 
@@ -32,6 +43,16 @@ export const HomeContainer = styled("main")`
         span {
             font-weight: 600;
         }
+
+        @media (max-width: 800px) {
+            font-size: 1.9rem;
+        }
+
+
+    }
+
+    @media (max-width: 800px) {
+        min-height: 80vh;
     }
 
 

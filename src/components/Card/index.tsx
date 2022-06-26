@@ -9,7 +9,19 @@ import { FaGithub, FaLink } from 'react-icons/fa'
 const Card = () => {
   return (
     <CardContainer>
-      <Carousel responsive={responsive} itemClass='carousel-item-padding-40-px'>
+      <Carousel
+        responsive={responsive}
+        itemClass='carousel-item-padding-40-px'
+        infinite={true}
+        containerClass='carousel-container'
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        dotListClass="custom-dot-list-style"
+        customTransition="all .5"
+        transitionDuration={500}
+        ssr={true}
+        keyBoardControl={true}
+        
+      >
         {projects.map(project => (
           <div key={project.title}>
             <h3>{project.title}</h3>
@@ -20,8 +32,12 @@ const Card = () => {
               height={200}
             />
             <NavLinks>
-              <a href={project.git}><FaGithub size={20} color=" #B5838D"/></a>
-              <a href={project.link}><FaLink size={20} color=" #B5838D" /></a>
+              <a href={project.git}>
+                <FaGithub size={20} color=' #B5838D' />
+              </a>
+              <a href={project.link}>
+                <FaLink size={20} color=' #B5838D' />
+              </a>
             </NavLinks>
           </div>
         ))}

@@ -2,7 +2,6 @@ import { styled } from "@mui/material";
 
 export const HeaderContainer = styled("header")`
   width: 100%;
-  height: 90px;
   background: #6d6875;
   display: flex;
   align-items: center;
@@ -11,6 +10,7 @@ export const HeaderContainer = styled("header")`
   border-bottom: 2px solid #FFCDB2;
   height: 15%;
 
+  
   button {
     color: ${({ theme }) => theme.palette.text.primary};
     font-weight: 500;
@@ -19,10 +19,23 @@ export const HeaderContainer = styled("header")`
     height: 40px;
     font-size: 1.8rem;
   }
-
+  
   span {
     color: #b5838d;
   }
+
+  svg {
+    display: none;
+  }
+  
+  @media (max-width: 800px) {
+    height: 90px;
+
+    svg {
+      display: block;
+    }
+  }
+  
 `;
 
 export const MenuNav = styled("nav")`
@@ -32,6 +45,13 @@ export const MenuNav = styled("nav")`
 
     &:hover {
         filter: brightness(0.8);
+    }
+  }
+
+
+  @media (max-width: 800px) {
+    a {
+      display: none;
     }
   }
 

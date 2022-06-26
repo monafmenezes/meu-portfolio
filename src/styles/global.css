@@ -30,3 +30,10 @@ button {
 ul {
   list-style: none;
 }
+
+
+@media (max-width: 800px) {
+  #__next {
+    height: 100%;
+  }
+}
