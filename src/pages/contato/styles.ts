@@ -21,8 +21,8 @@ const ContatoContainer = styled('main')`
     max-width: 350px;
   }
 
-  @media (max-width: 800) {
-    height: 80vh;
+  @media (max-width: 800px) {
+    min-height: 80vh;
   }
 `
 
