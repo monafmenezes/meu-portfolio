@@ -20,6 +20,10 @@ const ContatoContainer = styled('main')`
   form {
     max-width: 350px;
   }
+
+  @media (max-width: 800) {
+    height: 80vh;
+  }
 `
 
 export default ContatoContainer
