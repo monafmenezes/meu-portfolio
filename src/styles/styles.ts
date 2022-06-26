@@ -37,8 +37,8 @@ export const HomeContainer = styled("main")`
     h3 {
         color: ${({ theme }) => theme.palette.text.secondary};
         font-weight: 400;
-        font-size: 1.8  rem;
-        border-right: 1px solid #6D6875;
+        font-size: 1.8rem;
+        border-right: 1px solid #FFF;
         margin: 0;
         padding:0;
 
