@@ -21,7 +21,6 @@ const Home: NextPage = () => {
 
           <div>
             <Image
-              className='image'
               src={devImage}
               alt='Desenvolvimento web'
               width={400}

@@ -1,6 +1,8 @@
 import { styled } from "@mui/material";
 
+
 export const HomeContainer = styled("main")`
+
     background-color: #B5838D;
     padding: 0 3rem ;
     display: flex;

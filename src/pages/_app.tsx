@@ -5,6 +5,7 @@ import theme from "../styles/theme";
 import Header from "../components/Header";
 import Footer from '../components/Footer';
 
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
