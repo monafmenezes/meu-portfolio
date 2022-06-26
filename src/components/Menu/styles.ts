@@ -19,7 +19,7 @@ export const MenuContainer = styled('div')`
     margin: 4px;
     margin-top: 12px;
 
-    a {
+    button {
       margin: 1rem;
       font-size: 1.2rem;
       color: #FFCDB2;

@@ -3,16 +3,33 @@ import { MenuContainer } from './styles'
 
 interface IMenu {
   menu: boolean
+  setMenu: () => void
 }
 
-const Menu = ({ menu }: IMenu) => {
+const Menu = ({ menu, setMenu }: IMenu) => {
   return (
     <MenuContainer className={menu ? '' : 'hide'}>
       <nav>
-        <Link href='/sobre'>Sobre</Link>
-        <Link href='/projetos'>Projetos</Link>
-        <Link href='/skills'>Skills</Link>
-        <Link href='contato'>Contato</Link>
+        <Link href='/sobre'>
+          <button onClick={setMenu} type='button'>
+            Sobre
+          </button>
+        </Link>
+        <Link href='/projetos'>
+          <button onClick={setMenu} type='button'>
+            Projetos
+          </button>
+        </Link>
+        <Link href='/skills'>
+          <button onClick={setMenu} type='button'>
+            Skills
+          </button>
+        </Link>
+        <Link  href='contato'>
+          <button onClick={setMenu} type='button'>
+            Contato
+          </button>
+        </Link>
       </nav>
     </MenuContainer>
   )

@@ -6,6 +6,10 @@ import { HeaderContainer, MenuNav, Overlay } from './style'
 
 const Header = () => {
   const [menu, setMenu] = useState<boolean>(false)
+
+  const handleMenu = () => {
+    setMenu(!menu)
+  }
   return (
     <HeaderContainer>
       <Link href='/'>
@@ -22,10 +26,10 @@ const Header = () => {
         <Link href='/contato'>Contato</Link>
       </MenuNav>
 
-      <FaBars size={30} color='#FFCDB2' onClick={() => setMenu(!menu)} />
+      <FaBars size={30} color='#FFCDB2' onClick={handleMenu} />
 
-      {menu && <Menu menu={menu} />}
-      {menu && <Overlay onClick={() => setMenu(!menu)} />}
+      {menu && <Menu menu={menu} setMenu={handleMenu} />}
+      {menu && <Overlay onClick={handleMenu} />}
     </HeaderContainer>
   )
 }
