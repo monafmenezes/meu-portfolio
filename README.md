@@ -60,6 +60,7 @@ $ yarn
 $ yarn dev
 
 # Server will start on port:3000 - go to <http://localhost:3000>
+```
 
 ### 🛠 Technologies
 
@@ -67,5 +68,17 @@ The following tools were used in building the project:
 
 -[NextJs](https://nextjs.org/)
 -[Material UI](https://mui.com/pt/)
+-[React Icons](https://react-icons.github.io/react-icons/)
+-[React Multi Carousel](https://www.npmjs.com/package/react-multi-carousel)
+
+### ✅ Autor
+<img style="border-radius: 50%;" src="https://github.com/monafmenezes.png" width="100px;" alt=""/>
+
+Made by Monalisa Menezes, get in touch!
+<div>
+<a href = "mailto:psimonafmenezes@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+    <a href="https://www.linkedin.com/in/monalisafmenezes" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+    <a href="https://twitter.com/monafmenezes" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" target="_blank"></a> 
+ </div>
 
 
